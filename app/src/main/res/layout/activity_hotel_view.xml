@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF1EB"
+    android:fillViewport="true"
+    tools:context=".Shehani.HotelDetailViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_hotel"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_back_border"
+            android:scaleType="centerCrop" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:isIndicator="true"
+            android:numStars="5" />
+
+        <EditText
+            android:id="@+id/text_hotel_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_plant_search"
+            android:gravity="center"
+            android:hint="Hotel Name"
+            android:textColor="#756f6f"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck">
+
+        </EditText>
+
+        <Spinner
+            android:id="@+id/province"
+            style="@style/SpinnerTextViewItem"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_plant_search"
+            android:entries="@array/province_list"
+            android:gravity="center"
+            android:hint="Western"
+            android:textAlignment="center"
+            android:textColor="#756f6f"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_plant_search"
+            android:gravity="center"
+            android:hint="Address"
+            android:textColor="#756f6f"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_plant_search"
+            android:gravity="center"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:textColor="#756f6f"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_plant_search"
+            android:gravity="center"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:textColor="#756f6f"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_plant_search"
+            android:gravity="center"
+            android:hint="Description"
+            android:textColor="#756f6f"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck">
+
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_style"
+                android:text="Delete"
+                android:textColor="#E8DDDD"
+                android:textColorHint="#736D6D"
+                app:rippleColor="#615C5C"
+                app:strokeColor="#FBFFFB"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_style"
+                android:text="Update"
+                android:textColor="#ECE3E3"
+                android:textColorHint="#656060"
+                app:strokeColor="#FBFFFB"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
